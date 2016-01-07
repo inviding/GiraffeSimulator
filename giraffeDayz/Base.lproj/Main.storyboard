@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ziN-e7-BqD">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="giraffeDayz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="long horse simulator 2k15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgv-9c-21d">
+                                <rect key="frame" x="202" y="72" width="197" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZP-10-D75">
+                                <rect key="frame" x="237" y="429" width="127" height="30"/>
+                                <animations/>
+                                <state key="normal" title="wait how do u play"/>
+                                <connections>
+                                    <segue destination="up5-CF-hTZ" kind="show" id="psg-kz-5LK"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y0z-bE-Dsq">
+                                <rect key="frame" x="200" y="176" width="200" height="200"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5vu-8g-Y9t"/>
+                                    <constraint firstAttribute="height" constant="200" id="BGb-7j-QdY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mZP-10-D75" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CPt-1p-GOj"/>
+                            <constraint firstItem="y0z-bE-Dsq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q33-kB-wrg"/>
+                            <constraint firstItem="Lgv-9c-21d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="maV-i1-UCH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mbt-cY-Wsw"/>
+                    <connections>
+                        <outlet property="dumbGiraffe" destination="y0z-bE-Dsq" id="5N8-nR-acp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="-402"/>
+        </scene>
+        <!--How To View Controller-->
+        <scene sceneID="18Q-FP-Jxg">
+            <objects>
+                <viewController id="up5-CF-hTZ" customClass="HowToViewController" customModule="giraffeDayz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pv9-7C-JYy"/>
+                        <viewControllerLayoutGuide type="bottom" id="kDo-zE-jad"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rlY-O9-Uab">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqw-6q-qOt">
+                                <rect key="frame" x="274" y="450" width="53" height="30"/>
+                                <animations/>
+                                <state key="normal" title="ok start"/>
+                                <connections>
+                                    <segue destination="ARk-fE-DCq" kind="show" id="Rtz-Wf-gJY"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TWv-jf-tB4">
+                                <rect key="frame" x="110" y="118" width="405" height="296"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">You have been reincarnated into a giraffe. In order to turn back into a human, you must earn 6 karma points at the end of three days. You earn 2 karma points by choosing the correct answer and 1 if you choose the wrong answer.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TWv-jf-tB4" firstAttribute="centerX" secondItem="rlY-O9-Uab" secondAttribute="centerX" id="f4Z-4l-cjZ"/>
+                            <constraint firstItem="wqw-6q-qOt" firstAttribute="centerX" secondItem="rlY-O9-Uab" secondAttribute="centerX" id="i5U-3N-li2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4iq-3O-2hW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734" y="-402"/>
+        </scene>
+        <!--Day One View Controller-->
+        <scene sceneID="fgh-rc-pq6">
+            <objects>
+                <viewController id="ARk-fE-DCq" customClass="DayOneViewController" customModule="giraffeDayz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qWQ-Ki-8lv"/>
+                        <viewControllerLayoutGuide type="bottom" id="hgH-Df-1pG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8nv-ik-3xi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hI5-Ug-hTi">
+                                <rect key="frame" x="180" y="292" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNE-2q-fJJ">
+                                <rect key="frame" x="267" y="512" width="66" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Run away"/>
+                                <connections>
+                                    <segue destination="Eks-1O-Z54" kind="show" identifier="firstMeh" id="Rsz-9A-qmK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g36-eU-u34">
+                                <rect key="frame" x="248" y="550" width="105" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Tip your fedora"/>
+                                <connections>
+                                    <segue destination="PUu-Xd-pHy" kind="show" identifier="firstFail" id="a7h-Ry-bJn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4X-Sn-vUT">
+                                <rect key="frame" x="231" y="474" width="138" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Fight for supremacy"/>
+                                <connections>
+                                    <segue destination="mT9-Nh-bi6" kind="show" identifier="firstWin" id="t3M-fz-AMC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sns-kk-X6L">
+                                <rect key="frame" x="180" y="120" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="9bK-Tr-E7l"/>
+                                    <constraint firstAttribute="width" constant="200" id="PY8-Ss-dxr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzf-SI-SqT">
+                                <rect key="frame" x="285" y="83" width="11" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Karma: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VyW-wW-W16">
+                                <rect key="frame" x="211" y="83" width="59" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g36-eU-u34" firstAttribute="centerX" secondItem="8nv-ik-3xi" secondAttribute="centerX" id="ABr-rZ-QzV"/>
+                            <constraint firstItem="g4X-Sn-vUT" firstAttribute="centerX" secondItem="8nv-ik-3xi" secondAttribute="centerX" id="AxK-Dq-Gt4"/>
+                            <constraint firstItem="sns-kk-X6L" firstAttribute="centerX" secondItem="8nv-ik-3xi" secondAttribute="centerX" id="RmR-jd-cpZ"/>
+                            <constraint firstItem="jNE-2q-fJJ" firstAttribute="centerX" secondItem="8nv-ik-3xi" secondAttribute="centerX" id="s7E-bk-cwP"/>
+                            <constraint firstItem="hI5-Ug-hTi" firstAttribute="centerX" secondItem="8nv-ik-3xi" secondAttribute="centerX" id="yOd-Oe-TfW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DayOneTextView" destination="hI5-Ug-hTi" id="D0J-fS-RMf"/>
+                        <outlet property="dayOnePicture" destination="sns-kk-X6L" id="Pfs-7a-WKf"/>
+                        <outlet property="karmaCount" destination="rzf-SI-SqT" id="VYu-WB-ujm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xuZ-B7-Jji" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2404" y="-402"/>
+        </scene>
+        <!--Day One Success View Controller-->
+        <scene sceneID="AZK-7t-ih3">
+            <objects>
+                <viewController id="mT9-Nh-bi6" customClass="DayOneSuccessViewController" customModule="giraffeDayz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="poT-ag-eTt"/>
+                        <viewControllerLayoutGuide type="bottom" id="kgy-Er-UDV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HXj-pA-3fs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="You beat him up cause u da alpha gerafe. No giraffe messes with you." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m2S-Ex-pBz">
+                                <rect key="frame" x="160" y="186" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Gain 2 Karma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfj-tQ-naT">
+                                <rect key="frame" x="229" y="308" width="103" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bME-Yo-NUQ">
+                                <rect key="frame" x="256" y="430" width="49" height="30"/>
+                                <animations/>
+                                <state key="normal" title="&gt;Day 2"/>
+                                <connections>
+                                    <segue destination="sKz-vS-gfh" kind="show" id="hic-RC-s9G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bME-Yo-NUQ" firstAttribute="centerX" secondItem="HXj-pA-3fs" secondAttribute="centerX" id="C6j-0y-BLf"/>
+                            <constraint firstItem="m2S-Ex-pBz" firstAttribute="centerX" secondItem="HXj-pA-3fs" secondAttribute="centerX" id="Eja-RZ-hye"/>
+                            <constraint firstItem="gfj-tQ-naT" firstAttribute="centerX" secondItem="HXj-pA-3fs" secondAttribute="centerX" id="kN0-jK-nep"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ef-eL-Mff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3072" y="-1107"/>
+        </scene>
+        <!--Day One Meh View Controller-->
+        <scene sceneID="8Lp-Q1-Tbg">
+            <objects>
+                <viewController id="Eks-1O-Z54" customClass="DayOneMehViewController" customModule="giraffeDayz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oD1-n3-LSj"/>
+                        <viewControllerLayoutGuide type="bottom" id="kCx-41-bpB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AwU-6g-lOR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="You run away cause u da beta gerafe. :'(" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L9K-iL-9Nu">
+                                <rect key="frame" x="180" y="94" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeQ-Kf-bnr">
+                                <rect key="frame" x="287" y="420" width="49" height="30"/>
+                                <animations/>
+                                <state key="normal" title="&gt;Day 2"/>
+                                <connections>
+                                    <segue destination="sKz-vS-gfh" kind="show" id="R5L-Jf-lw2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Gain 1 Karma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5q1-ci-bZx">
+                                <rect key="frame" x="250" y="276" width="101" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5q1-ci-bZx" firstAttribute="centerX" secondItem="AwU-6g-lOR" secondAttribute="centerX" id="B5e-Pm-jZc"/>
+                            <constraint firstItem="UeQ-Kf-bnr" firstAttribute="centerX" secondItem="AwU-6g-lOR" secondAttribute="centerX" id="srU-cV-c28"/>
+                            <constraint firstItem="L9K-iL-9Nu" firstAttribute="centerX" secondItem="AwU-6g-lOR" secondAttribute="centerX" id="v6c-Kq-CWG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cxy-3o-5fg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3072" y="-402"/>
+        </scene>
+        <!--Day Two View Controller-->
+        <scene sceneID="jNg-DC-7gD">
+            <objects>
+                <viewController id="sKz-vS-gfh" customClass="DayTwoViewController" customModule="giraffeDayz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tHj-Jb-gN6"/>
+                        <viewControllerLayoutGuide type="bottom" id="UMa-s2-uoE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="239-Ul-MKh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="csQ-8h-0H9">
+                                <rect key="frame" x="67" y="170" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Hjv-7g-8iP"/>
+                                    <constraint firstAttribute="width" constant="200" id="wJk-Kg-hbt"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="You are a hungry giraffe. You are looking for food and you spot the best looking leaf in the tree. But it’s too high up!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3UF-8h-G7z">
+                                <rect key="frame" x="67" y="332" width="240" height="85"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7Q-rE-eu3">
+                                <rect key="frame" x="164" y="511" width="35" height="30"/>
+                                <animations/>
+                                <state key="normal" title="don't"/>
+                                <connections>
+                                    <segue destination="ynG-cr-XAD" kind="show" identifier="secondFail" id="Gvf-Ra-piX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhb-ZS-0oB">
+                                <rect key="frame" x="106" y="481" width="163" height="30"/>
+                                <animations/>
+                                <state key="normal" title="USE YOUR LONG NECK"/>
+                                <connections>
+                                    <segue destination="z6i-Rg-qIG" kind="show" identifier="secondWin" id="OWQ-ma-znb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Do you:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHh-2X-E0v">
+                                <rect key="frame" x="158" y="431" width="59" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Karma:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMH-yy-3Zr">
+                                <rect key="frame" x="93" y="94" width="54" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nI6-o1-yZ9">
+                                <rect key="frame" x="167" y="89" width="41" height="31"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="csQ-8h-0H9" firstAttribute="centerX" secondItem="239-Ul-MKh" secondAttribute="centerX" id="2Xs-PK-4dH"/>
+                            <constraint firstItem="UHh-2X-E0v" firstAttribute="centerX" secondItem="csQ-8h-0H9" secondAttribute="centerX" id="Afb-y2-ZeK"/>
+                            <constraint firstItem="3UF-8h-G7z" firstAttribute="centerX" secondItem="csQ-8h-0H9" secondAttribute="centerX" id="Y9d-ow-Sos"/>
+                            <constraint firstItem="Bhb-ZS-0oB" firstAttribute="centerX" secondItem="csQ-8h-0H9" secondAttribute="centerX" id="Zoo-j4-M86"/>
+                            <constraint firstItem="Bhb-ZS-0oB" firstAttribute="centerX" secondItem="239-Ul-MKh" secondAttribute="centerX" id="uig-Hp-VHj"/>
+                            <constraint firstItem="i7Q-rE-eu3" firstAttribute="centerX" secondItem="csQ-8h-0H9" secondAttribute="centerX" id="wQI-ZX-zlu"/>
+                            <constraint firstItem="i7Q-rE-eu3" firstAttribute="centerX" secondItem="239-Ul-MKh" secondAttribute="centerX" id="xED-52-ADe"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="dayTwoPictures" destination="csQ-8h-0H9" id="pTd-9T-wlu"/>
+                        <outlet property="karmaCount" destination="nI6-o1-yZ9" id="W2S-53-5hh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Yr-S5-TCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3765.5" y="-402.5"/>
+        </scene>
+        <!--Day Two Success View Controller-->
+        <scene sceneID="L1s-eM-eur">
+            <objects>
+                <viewController id="z6i-Rg-qIG" customClass="DayTwoSuccessViewController" customModule="giraffeDayz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eGe-zO-hcu"/>
+                        <viewControllerLayoutGuide type="bottom" id="I3I-39-1wQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TzO-pa-jmm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aLZ-RG-YnF">
+                                <rect key="frame" x="68" y="85" width="259" height="175"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Your amazing determination was the catalyst for your neck growth horomone! Your neck is now super tall and you can eat space leaves.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mV-1Y-fDS">
+                                <rect key="frame" x="164" y="403" width="49" height="30"/>
+                                <animations/>
+                                <state key="normal" title="&gt;Day 3"/>
+                                <connections>
+                                    <segue destination="Ulu-DK-0Y7" kind="show" id="QKD-8h-40L"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Gain 2 Karma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xm-mE-Zuf">
+                                <rect key="frame" x="137" y="281" width="103" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5mV-1Y-fDS" firstAttribute="centerX" secondItem="TzO-pa-jmm" secondAttribute="centerX" id="TpX-FH-pqV"/>
+                            <constraint firstItem="5Xm-mE-Zuf" firstAttribute="centerX" secondItem="TzO-pa-jmm" secondAttribute="centerX" id="l0w-Hw-28U"/>
+                            <constraint firstItem="aLZ-RG-YnF" firstAttribute="centerX" secondItem="TzO-pa-jmm" secondAttribute="centerX" id="qnA-uH-5jq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IYA-M6-Cwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4420.5" y="-825.5"/>
+        </scene>
+        <!--Day Two Meh View Controller-->
+        <scene sceneID="Lwg-vk-JMf">
+            <objects>
+                <viewController id="ynG-cr-XAD" customClass="DayTwoMehViewController" customModule="giraffeDayz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s0T-eo-yKa"/>
+                        <viewControllerLayoutGuide type="bottom" id="reh-5z-XWB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gvs-18-r2L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SzX-3k-LgJ">
+                                <rect key="frame" x="164" y="410" width="49" height="30"/>
+                                <animations/>
+                                <state key="normal" title="&gt;Day 3"/>
+                                <connections>
+                                    <segue destination="Ulu-DK-0Y7" kind="show" id="zu6-t3-r9j"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Gain 1 Karma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loQ-tu-Al7">
+                                <rect key="frame" x="138" y="268" width="101" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="You're a fool" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="p1Z-9Y-QIG">
+                                <rect key="frame" x="126" y="109" width="124" height="85"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="o04-Sh-dno"/>
+                                    <constraint firstAttribute="width" constant="124" id="uhy-Dx-ofO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p1Z-9Y-QIG" firstAttribute="centerX" secondItem="gvs-18-r2L" secondAttribute="centerX" id="0w6-Vk-5rh"/>
+                            <constraint firstItem="SzX-3k-LgJ" firstAttribute="centerX" secondItem="gvs-18-r2L" secondAttribute="centerX" id="bZH-TD-04n"/>
+                            <constraint firstItem="loQ-tu-Al7" firstAttribute="centerX" secondItem="gvs-18-r2L" secondAttribute="centerX" id="ro8-pg-1RW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZF4-mX-x7X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4419" y="-155"/>
+        </scene>
+        <!--Day Three View Controller-->
+        <scene sceneID="Obi-IF-z6T">
+            <objects>
+                <viewController id="Ulu-DK-0Y7" customClass="DayThreeViewController" customModule="giraffeDayz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CQq-ui-2kg"/>
+                        <viewControllerLayoutGuide type="bottom" id="qbw-XF-KuW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rHw-Gg-8A3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xnn-K5-700">
+                                <rect key="frame" x="79" y="182" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="PFe-oy-1a0"/>
+                                    <constraint firstAttribute="height" constant="200" id="hcx-fX-m7C"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tU-4n-D3m">
+                                <rect key="frame" x="28" y="480" width="318" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Do something with your neck to intimidate him"/>
+                                <connections>
+                                    <segue destination="TnL-W8-okm" kind="show" identifier="thirdFail" id="3HI-lg-sFS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Do you:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMN-w1-VH8">
+                                <rect key="frame" x="158" y="438" width="59" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owa-ho-USH">
+                                <rect key="frame" x="85" y="538" width="206" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Run away. Literally no chance."/>
+                                <connections>
+                                    <segue destination="MFG-wa-dB6" kind="show" identifier="thirdWin" id="Cq2-ZK-RvU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Karma:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTa-2i-ZSk">
+                                <rect key="frame" x="89" y="117" width="54" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DI-gU-E7A">
+                                <rect key="frame" x="171" y="110" width="55" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Lion comes over to you and says &quot;hey bub I’m gon eat you&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XdO-S5-KDz">
+                                <rect key="frame" x="85" y="324" width="240" height="75"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XdO-S5-KDz" firstAttribute="centerX" secondItem="rHw-Gg-8A3" secondAttribute="centerX" id="B8R-E4-fgI"/>
+                            <constraint firstItem="0tU-4n-D3m" firstAttribute="centerX" secondItem="rHw-Gg-8A3" secondAttribute="centerX" id="Bt2-8k-wjU"/>
+                            <constraint firstItem="xnn-K5-700" firstAttribute="centerX" secondItem="rHw-Gg-8A3" secondAttribute="centerX" id="cDZ-7p-Yws"/>
+                            <constraint firstItem="YMN-w1-VH8" firstAttribute="centerX" secondItem="rHw-Gg-8A3" secondAttribute="centerX" id="gZT-9h-exF"/>
+                            <constraint firstItem="Owa-ho-USH" firstAttribute="centerX" secondItem="rHw-Gg-8A3" secondAttribute="centerX" id="mEP-IZ-yEy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="day3Pic" destination="xnn-K5-700" id="CRa-hx-yRc"/>
+                        <outlet property="karmaCount" destination="9DI-gU-E7A" id="wwf-yv-cZm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggg-i6-ahT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5055.5" y="-391.5"/>
+        </scene>
+        <!--Day Three Fail View Controller-->
+        <scene sceneID="ddv-qO-vNT">
+            <objects>
+                <viewController id="TnL-W8-okm" customClass="DayThreeFailViewController" customModule="giraffeDayz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9tO-Xr-ycP"/>
+                        <viewControllerLayoutGuide type="bottom" id="vrr-W9-rm4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bY6-4p-0Er">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="The lion is so entranced by your neck that he thinks you're a juicy giraffe steak. You are eaten." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GU4-dN-0tF">
+                                <rect key="frame" x="73" y="115" width="244" height="201"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gn4-ac-3O5">
+                                <rect key="frame" x="158" y="438" width="60" height="30"/>
+                                <animations/>
+                                <state key="normal" title="&gt;Results"/>
+                                <connections>
+                                    <segue destination="49e-Kq-PZn" kind="show" id="Qgm-Hi-6Ml"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Gain 1 Karma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ht4-Kc-pp4">
+                                <rect key="frame" x="131" y="353" width="101" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gn4-ac-3O5" firstAttribute="centerX" secondItem="bY6-4p-0Er" secondAttribute="centerX" id="AHs-65-IiD"/>
+                            <constraint firstItem="GU4-dN-0tF" firstAttribute="centerX" secondItem="bY6-4p-0Er" secondAttribute="centerX" id="dsf-cz-h5A"/>
+                            <constraint firstItem="Ht4-Kc-pp4" firstAttribute="centerX" secondItem="bY6-4p-0Er" secondAttribute="centerX" id="gDg-BN-deW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lbo-3b-YcS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5706.5" y="-825.5"/>
+        </scene>
+        <!--Day Three Success View Controller-->
+        <scene sceneID="lut-9U-p9h">
+            <objects>
+                <viewController id="MFG-wa-dB6" customClass="DayThreeSuccessViewController" customModule="giraffeDayz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jNO-PL-gvN"/>
+                        <viewControllerLayoutGuide type="bottom" id="0RS-Gu-Czk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Thb-Jp-bDx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cbr-x1-sD6">
+                                <rect key="frame" x="78" y="147" width="263" height="203"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Your giraffe sense tingles and you run away. Good decision because you just saw mr. lion chase after Chad instead. Ha, silly Chad.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOp-Bb-tKr">
+                                <rect key="frame" x="158" y="466" width="60" height="30"/>
+                                <animations/>
+                                <state key="normal" title="&gt;Results"/>
+                                <connections>
+                                    <segue destination="49e-Kq-PZn" kind="show" id="qbx-kH-kvN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Gain 2 Karma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRk-uk-T2H">
+                                <rect key="frame" x="143" y="375" width="103" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eOp-Bb-tKr" firstAttribute="centerX" secondItem="Thb-Jp-bDx" secondAttribute="centerX" id="K4D-iy-oX9"/>
+                            <constraint firstItem="vRk-uk-T2H" firstAttribute="centerX" secondItem="Thb-Jp-bDx" secondAttribute="centerX" id="U5r-1b-XL8"/>
+                            <constraint firstItem="cbr-x1-sD6" firstAttribute="centerX" secondItem="Thb-Jp-bDx" secondAttribute="centerX" id="byG-dv-1Av"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fv6-TM-KeC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5714.5" y="-155.5"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="SZF-4o-ptJ">
+            <objects>
+                <viewController id="49e-Kq-PZn" customClass="ResultsViewController" customModule="giraffeDayz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qpG-Hb-c1H"/>
+                        <viewControllerLayoutGuide type="bottom" id="0v7-vA-vVc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Cq-lI-2iy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zua-tF-Fbm">
+                                <rect key="frame" x="67" y="112" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="jGB-OH-p77"/>
+                                    <constraint firstAttribute="height" constant="200" id="vqb-12-1LY"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZH9-St-Xf3">
+                                <rect key="frame" x="62" y="334" width="282" height="186"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etd-ri-iDs">
+                                <rect key="frame" x="161" y="553" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zua-tF-Fbm" firstAttribute="centerX" secondItem="8Cq-lI-2iy" secondAttribute="centerX" id="0fP-ap-kcD"/>
+                            <constraint firstItem="Etd-ri-iDs" firstAttribute="centerX" secondItem="8Cq-lI-2iy" secondAttribute="centerX" id="5In-ii-gAm"/>
+                            <constraint firstItem="ZH9-St-Xf3" firstAttribute="centerX" secondItem="8Cq-lI-2iy" secondAttribute="centerX" id="Dpq-Wa-Jtm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="finalImage" destination="zua-tF-Fbm" id="LhO-xZ-8uO"/>
+                        <outlet property="karmaCount" destination="Etd-ri-iDs" id="6N7-f0-7kX"/>
+                        <outlet property="resultsView" destination="ZH9-St-Xf3" id="X9w-MJ-wum"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T4d-DT-k1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6408" y="-523"/>
+        </scene>
+        <!--Day One Fail View Controller-->
+        <scene sceneID="ttI-BG-JTA">
+            <objects>
+                <viewController id="PUu-Xd-pHy" customClass="DayOneFailViewController" customModule="giraffeDayz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="755-y1-Jtp"/>
+                        <viewControllerLayoutGuide type="bottom" id="RsO-jC-aPi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RhW-BU-gh0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="You tip your fedora at milady. She rolls her giraffe eyes and leaves with Chad." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vaJ-g9-MF6">
+                                <rect key="frame" x="141" y="83" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hn7-xh-dFi">
+                                <rect key="frame" x="244" y="371" width="49" height="30"/>
+                                <animations/>
+                                <state key="normal" title="&gt;Day 2"/>
+                                <connections>
+                                    <segue destination="sKz-vS-gfh" kind="show" id="6hO-os-06m"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Gain 0 Karma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMp-V1-ulB">
+                                <rect key="frame" x="216" y="257" width="104" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vaJ-g9-MF6" firstAttribute="centerX" secondItem="RhW-BU-gh0" secondAttribute="centerX" id="SJ1-ua-CI8"/>
+                            <constraint firstItem="jMp-V1-ulB" firstAttribute="centerX" secondItem="RhW-BU-gh0" secondAttribute="centerX" id="UPh-IU-maZ"/>
+                            <constraint firstItem="hn7-xh-dFi" firstAttribute="centerX" secondItem="RhW-BU-gh0" secondAttribute="centerX" id="XNI-ho-RYR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSU-tp-uki" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3072" y="314"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iHu-dW-fWH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ziN-e7-BqD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ftD-Y2-Ih0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hD5-Pb-c9k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gIc-Ck-soU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352" y="-402"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="hic-RC-s9G"/>
+        <segue reference="QKD-8h-40L"/>
+        <segue reference="qbx-kH-kvN"/>
+    </inferredMetricsTieBreakers>
+</document>
